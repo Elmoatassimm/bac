@@ -20,7 +20,7 @@ return [
         'localhost,localhost:3000,localhost:5173,127.0.0.1,127.0.0.1:3000,127.0.0.1:5173,127.0.0.1:8000,::1',
         Sanctum::currentApplicationUrlWithPort(),
         env('FRONTEND_URL') ? ','.parse_url(env('FRONTEND_URL'), PHP_URL_HOST) : '',
-        ',backkk-main-kdsfw4.laravel.cloud' // Production domain
+        ',backkk-main-kdsfw4.laravel.cloud,shafaq-main-gfdxcs.laravel.cloud' // Production domains
     ))),
 
     /*

@@ -24,7 +24,8 @@ return [
         env('APP_URL', 'http://localhost:8000'),
         'http://localhost:5173', // Vite dev server
         'http://localhost:3000', // Alternative frontend port
-        'https://backkk-main-kdsfw4.laravel.cloud', // Production backend
+        'https://backkk-main-kdsfw4.laravel.cloud', // Old production backend
+        'https://shafaq-main-gfdxcs.laravel.cloud', // New production backend
     ],
 
     'allowed_origins_patterns' => [],
