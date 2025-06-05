@@ -19,7 +19,13 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [
+        env('FRONTEND_URL', 'http://localhost:3000'),
+        env('APP_URL', 'http://localhost:8000'),
+        'http://localhost:5173', // Vite dev server
+        'http://localhost:3000', // Alternative frontend port
+        'https://backkk-main-kdsfw4.laravel.cloud', // Production backend
+    ],
 
     'allowed_origins_patterns' => [],
 
