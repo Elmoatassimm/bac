@@ -10,7 +10,7 @@ ClinicBook is a comprehensive healthcare appointment booking system that connect
 - **Seamless Booking**: Simple appointment booking with client information collection
 - **Secure Payments**: Integrated Stripe payment processing for appointment fees
 - **Admin Dashboard**: Filament-powered admin panel for healthcare providers
-- **Real-time Notifications**: Email notifications for new bookings 
+- **Real-time Notifications**: Email notifications for new bookings
 - **Multi-tenant Support**: Each healthcare provider manages their own offers and bookings
 
 ## 🛠️ Technology Stack
@@ -49,7 +49,7 @@ erDiagram
         created_at timestamp
         updated_at timestamp
     }
-    
+
     OFFERS {
         id bigint PK
         user_id bigint FK
@@ -59,7 +59,7 @@ erDiagram
         created_at timestamp
         updated_at timestamp
     }
-    
+
     CLIENTS {
         id bigint PK
         name varchar
@@ -68,7 +68,7 @@ erDiagram
         created_at timestamp
         updated_at timestamp
     }
-    
+
     BOOKINGS {
         id bigint PK
         offer_id bigint FK
@@ -79,7 +79,7 @@ erDiagram
         created_at timestamp
         updated_at timestamp
     }
-    
+
     PAYMENTS {
         id bigint PK
         booking_id bigint FK
@@ -92,7 +92,7 @@ erDiagram
         created_at timestamp
         updated_at timestamp
     }
-    
+
     USERS ||--o{ OFFERS : "creates"
     OFFERS ||--o{ BOOKINGS : "has"
     CLIENTS ||--o{ BOOKINGS : "makes"
