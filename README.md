@@ -10,7 +10,7 @@ ClinicBook is a comprehensive healthcare appointment booking system that connect
 - **Seamless Booking**: Simple appointment booking with client information collection
 - **Secure Payments**: Integrated Stripe payment processing for appointment fees
 - **Admin Dashboard**: Filament-powered admin panel for healthcare providers
-- **Real-time Notifications**: Email notifications for booking confirmations
+- **Real-time Notifications**: Email notifications for new bookings 
 - **Multi-tenant Support**: Each healthcare provider manages their own offers and bookings
 
 ## 🛠️ Technology Stack
@@ -162,23 +162,6 @@ POST /api/v1/bookings
 - MySQL database
 - Stripe account for payments
 
-### Backend Setup
-```bash
-cd backend
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan serve
-```
-
-### Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
 ### Environment Variables
 ```env
 # Backend (.env)
@@ -191,44 +174,11 @@ VITE_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
 VITE_API_BASE_URL=http://localhost:8000/api/v1
 ```
 
-## 🧪 Testing
-
-### Backend Tests
-```bash
-cd backend
-php artisan test
-```
-
-### Frontend Tests
-```bash
-cd frontend
-npm run test
-```
 
 ## 📱 Features
 
 - **Responsive Design**: Mobile-first approach with TailwindCSS
-- **Server-Side Rendering**: Fast initial page loads with React Router 7
 - **Payment Security**: PCI-compliant payment processing with Stripe
 - **Admin Dashboard**: Comprehensive management interface with Filament
-- **Email Notifications**: Automated booking confirmations
+- **Email Notifications**
 - **Multi-tenant Architecture**: Isolated data for each healthcare provider
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Links
-
-- **Repository**: [https://github.com/Elmoatassimm/Shafaq.git](https://github.com/Elmoatassimm/Shafaq.git)
-- **Laravel Documentation**: [https://laravel.com/docs](https://laravel.com/docs)
-- **React Router Documentation**: [https://reactrouter.com](https://reactrouter.com)
-- **Stripe Documentation**: [https://stripe.com/docs](https://stripe.com/docs)
